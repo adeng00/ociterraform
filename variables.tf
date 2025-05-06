@@ -35,10 +35,10 @@ variable "instance_shape_config_memory_in_gbs" {
 
 variable "instance_os" {
   description = "Operating system for compute instances"
-  default     = "Oracle Linux"
+  default     = "Windows"
 }
 
 variable "linux_os_version" {
-  description = "Operating system version for all Linux instances"
-  default     = "7.9"
+  description = "Operating system version for Windows"
+  default     = "Server 2022 Standard"
 }
