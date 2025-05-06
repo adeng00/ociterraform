@@ -22,7 +22,7 @@ variable "Subnet-CIDR" {
 
 variable "instance_shape" {
   description = "Instance Shape"
-  default     = "VM.Standard.E3.Flex"
+  default     = "VM.Standard3.Flex"
 }
 
 variable "instance_ocpus" {
