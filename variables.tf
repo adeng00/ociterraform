@@ -42,13 +42,3 @@ variable "linux_os_version" {
   description = "Operating system version for Windows"
   default     = "Server 2022 Standard"
 }
-
-variable "instance_names" 
-{
-  type = list(string)
-  default = [
-    "instance-ABC",
-    "instance-DEF",
-    "instance-GHI"
-  ]
-}
