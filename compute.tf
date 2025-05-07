@@ -5,10 +5,10 @@
 
 
 resource "oci_core_instance" "compute_instance" {
+  for_each = toset(["instance-A", "instance-B", "instance-C"])
   availability_domain = var.availablity_domain_name == "" ? data.oci_identity_availability_domains.ADs.availability_domains[0]["name"] : var.availablity_domain_name
   compartment_id      = var.compartment_ocid
-  count               = 5
-  display_name        = "test-instance"
+  display_name        = each.key
   shape               = var.instance_shape
   fault_domain        = "FAULT-DOMAIN-1"
 
