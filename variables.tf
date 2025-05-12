@@ -38,7 +38,7 @@ variable "instance_os" {
   default     = "Windows"
 }
 
-variable "linux_os_version" {
+variable "os_version" {
   description = "Operating system version for Windows"
   default     = "Server 2022 Standard"
 }
