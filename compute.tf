@@ -5,7 +5,7 @@
 
 
 resource "oci_core_instance" "compute_instance" {
-  for_each = toset(["instance-A", "instance-B", "instance-C"])
+  for_each = toset(var.instance_names)
   availability_domain = var.availablity_domain_name == "" ? data.oci_identity_availability_domains.ADs.availability_domains[0]["name"] : var.availablity_domain_name
   compartment_id      = var.compartment_ocid
   display_name        = each.key
