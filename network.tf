@@ -1,4 +1,4 @@
-## Copyright (c) 2021, Oracle and/or its affiliates.
+## Copyright (c) 2025, Oracle and/or its affiliates.
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
 # Create VCN
@@ -6,7 +6,7 @@
 resource "oci_core_virtual_network" "vcn" {
   cidr_block     = var.VCN-CIDR
   compartment_id = var.compartment_ocid
-  display_name   = "test-vcn"
+  display_name   = "virtual-machines-vcn"
 }
 
 # Create internet gateway to allow public internet traffic
