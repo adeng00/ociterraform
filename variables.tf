@@ -43,10 +43,11 @@ variable "os_version" {
   default     = "Server 2022 Standard"
 }
 
-
-
 variable "instance_names" {
   type        = list(string)
   default     = ["instance-A", "instance-B", "instance-C"]
 }
 
+variable "boot_volume_size" {
+  default     = "50"
+}
